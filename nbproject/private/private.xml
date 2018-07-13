@@ -7,6 +7,7 @@
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/create.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/edit.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/Controllers/AdminUsersController.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/gulpfile.js</file>
             <file>file:/C:/xampp/htdocs/codehacking/.env.example</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/edit.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/index.blade.php</file>
@@ -20,6 +21,7 @@
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/index.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/categories/edit.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/.env</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/layouts/admin.blade.php</file>
         </group>
     </open-files>
 </project-private>

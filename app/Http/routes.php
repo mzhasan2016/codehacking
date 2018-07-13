@@ -21,3 +21,9 @@ Route::get('/home', 'HomeController@index');
 
 //Edwin's code starts below
 Route::resource('admin/users', 'AdminUsersController');
+
+Route::get('/admin', function(){
+    
+    return view('admin.index');
+    
+});
