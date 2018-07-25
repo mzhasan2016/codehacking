@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\UsersRequest;
+
+use App\User;
+use App\Role;
 
 class AdminUsersController extends Controller
 {
@@ -16,7 +20,9 @@ class AdminUsersController extends Controller
     public function index()
     {
         //
-        return view('admin.users.index');
+        $users = User::all();
+        
+        return view('admin.users.index', compact('users'));
     }
 
     /**
@@ -27,7 +33,14 @@ class AdminUsersController extends Controller
     public function create()
     {
         //
-        return view('admin.users.create');
+        //VVI - Below returns and array. Needs all(). Otherwise it won't work.Also name then id should be parameters
+        //otherwise for (id, name) parameter order will give result in the select box differently.
+        //$roles = Role::lists('name', 'id');
+        $roles = Role::lists('name', 'id')->all();
+        
+        //dd($roles);
+        
+        return view('admin.users.create', compact('roles'));
     }
 
     /**
@@ -36,9 +49,14 @@ class AdminUsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UsersRequest $request)
     {
         //
+        //return $request->all();
+        
+        User::create($request->all());
+        
+        return redirect('/admin/users');
     }
 
     /**
