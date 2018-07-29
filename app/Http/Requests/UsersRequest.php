@@ -13,6 +13,8 @@ class UsersRequest extends Request
      */
     public function authorize()
     {
+        //VVI - Below was return false by deafualt
+        //reurn false
         return true;
     }
 

@@ -4,25 +4,31 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/codehacking/app/Role.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/create.blade.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/edit.blade.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/app/Http/Controllers/AdminUsersController.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/gulpfile.js</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Photo.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/.env.example</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/edit.blade.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/index.blade.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/index.blade.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_07_11_153212_create_roles_table.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/routes.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/create.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/categories/index.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2014_10_12_000000_create_users_table.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/User.php</file>
-            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/index.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/categories/edit.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Http/Requests/Request.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/.env</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/layouts/admin.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/assets/sass/app.scss</file>
+            <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_07_25_171444_add_photo_id_to_users.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/create.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/edit.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Http/Controllers/AdminUsersController.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/gulpfile.js</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Http/Requests/UsersRequest.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_07_11_153212_create_roles_table.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/resources/views/includes/form_error.blade.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_07_25_180831_create_photos_table.php</file>
         </group>
     </open-files>
 </project-private>

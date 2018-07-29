@@ -9,6 +9,7 @@ use App\Http\Requests\UsersRequest;
 
 use App\User;
 use App\Role;
+use App\Photo;
 
 class AdminUsersController extends Controller
 {
@@ -54,9 +55,42 @@ class AdminUsersController extends Controller
         //
         //return $request->all();
         
-        User::create($request->all());
+        //User::create($request->all());
         
-        return redirect('/admin/users');
+        //return redirect('/admin/users');
+        
+        $input = $request->all();
+        //var_dump($input);
+        //var_dump($request->file);
+        //VVI - Below line does not work.
+        //var_dump($request->file('size'));
+        //var_dump($request->file('photo_id'));
+        //VVI - Note the changed if statement.
+        //if ($request->file('photo_id')) {
+        //if ($file = $request->file('photo_id')) {
+        //VVI - Did not use photo_id as that was giving null value.
+        if ($file = $request->file) {
+            
+            //var_dump($file);
+            //dd($file);
+            //return $file;
+            //return "Yes";
+            
+            //return "photo exists";
+            $name = time() . $file->getClientOriginalName();
+            //VVI - images folder will be created in public directory.
+            $file->move('images', $name);
+            $photo = Photo::create(['file'=>$name]);
+            $input['photo_id'] = $photo->id;
+        }
+        /*else {
+            
+            return "No";
+            
+        }*/
+        
+        $input['password'] = bcrypt($request->password);
+        User::create($input);
     }
 
     /**
