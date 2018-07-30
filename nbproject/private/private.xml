@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/xampp/htdocs/codehacking/app/Role.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Photo.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Http/Requests/UsersEditRequest.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/.env.example</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/posts/edit.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/routes.php</file>
