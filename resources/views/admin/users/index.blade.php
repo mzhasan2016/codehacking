@@ -6,6 +6,12 @@
 
     <h1>Users</h1>
     
+    @if(Session::has('deleted_user'))
+    
+        <p class="bg-danger">{{Session('deleted_user')}}</p>
+    
+    @endif
+    
     <table class="table">
         <thead>
             <tr>

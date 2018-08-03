@@ -12,6 +12,8 @@ use App\User;
 use App\Role;
 use App\Photo;
 
+use Illuminate\Support\Facades\Session;
+
 class AdminUsersController extends Controller
 {
     /**
@@ -172,5 +174,23 @@ class AdminUsersController extends Controller
     public function destroy($id)
     {
         //
+        //return "Destroy";
+        
+        //User::findOrFail($id)->delete();
+        
+        $user = User::findOrFail($id);
+        
+        //VVI - Below code did not work, since images folder came twice due to Accessor
+        //unlink(public_path() . "/images/" . $user->photo->file);
+        //var_dump(public_path());
+        //unlink($user->photo->file);
+        
+        $user->delete();
+        
+        //VVI - Below code is from Laravel
+        Session::flash('deleted_user', 'The user has been deleted');
+        
+        return redirect('/admin/users');
+        
     }
 }

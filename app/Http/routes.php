@@ -20,7 +20,13 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 //Edwin's code starts below
-Route::resource('admin/users', 'AdminUsersController');
+//VVI - Below line commented out & put inside group of middleware of admin.
+//Route::resource('admin/users', 'AdminUsersController');
+
+Route::group(['middleware'=>'admin'], function() {
+    Route::resource('admin/users', 'AdminUsersController');
+    Route::resource('admin/posts', 'AdminPostsController');
+});
 
 Route::get('/admin', function(){
     

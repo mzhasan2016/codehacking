@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <h1>Create User</h1>
+    <h1>Update User</h1>
     
     <div class="row">
     
@@ -66,13 +66,23 @@
 
             <div class="form-group">
 
-                {!! Form::submit('Update User', ['class'=>'btn btn-primary']) !!}
+                {!! Form::submit('Update User', ['class'=>'btn btn-primary col-sm-6']) !!}
 
                 {{--<input type="submit" name="Submit">--}}
 
             </div>
 
             {{--</form>--}}
+            {!! Form::close() !!}
+            
+            {!! Form::open(['method'=>'DELETE', 'action'=>['AdminUsersController@destroy', $user->id], 'class'=>'pull-right']) !!}
+
+            <div class="form-group">
+
+                {!! Form::submit('Delete User', ['class'=>'btn btn-danger']) !!}
+
+            </div>
+            
             {!! Form::close() !!}
 
         </div>
