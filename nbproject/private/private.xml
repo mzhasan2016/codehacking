@@ -36,7 +36,9 @@
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/Middleware/RedirectIfAuthenticated.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_07_11_153212_create_roles_table.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/Requests/PostsCreateRequest.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/app/Category.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/Middleware/EncryptCookies.php</file>
+            <file>file:/C:/xampp/htdocs/codehacking/database/migrations/2018_08_03_060502_create_categories_table.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/admin/users/index.blade.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/app/Http/Middleware/Authenticate.php</file>
             <file>file:/C:/xampp/htdocs/codehacking/resources/views/includes/form_error.blade.php</file>
